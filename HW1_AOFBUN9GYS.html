@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+    background-color: rgba(202, 202, 202, 0.473);
+    margin: -10px;
+    width: 100%;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    border: 2px;
+}
+#fname{
+    padding: 10px 10px 5px 0px;
+    font-weight: bold;
+}
+
+.fname{
+    height: 200px;
+   
+}
+.button{
+    padding: 25px 10px 5px 0px;
+    margin-left: 25px;   
+}
+#submit{
+    background-color:   rgba(25, 199, 25, 0.644);
+    border: 0px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.sname{
+    padding: 0px;
+    height: 200px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+           <div class="inputs">
+            <label id="fname">First name</label><br><br>
+            <input type="text" id="fname" name="fname" placeholder="Your name">
+           </div>
+           <div class="inputs">
+            <label id="fname">Last name</label><br><br>
+            <input type="text" id="fname" name="fname" placeholder="Your last name">
+           </div>
+           <div class="inputs">
+            <label id="fname"> Country</label><br><br>
+            <input type="text" id="fname" name="fname" placeholder="Australia">
+           </div>
+           <div class="inputs">
+            <label id="fname">Subject</label><br><br>
+            <input type="text" id="fname" class="sname" placeholder="Write something">
+           </div>
+           <div class="button">
+            <button id="submit">Submit</button>
+           </div>            
+          </form>
+    </div>   
+</body>
+</html>
