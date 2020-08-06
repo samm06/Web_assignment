@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,65 +6,83 @@
     <title>Document</title>
     <style>
         .container{
-    background-color: rgba(202, 202, 202, 0.473);
-    margin: -10px;
-    width: 100%;
-}
-.inputs{
-    display: flex;
-    flex-direction: column;
-    margin-left: 25px;
-    border: 2px;
-}
-#fname{
-    padding: 10px 10px 5px 0px;
-    font-weight: bold;
-}
+            width: 800px;
+            background-color: #eaf1eac0;
+            height:620px;
+            margin: 50px 100px 100px 300px;
+            box-shadow: 0px 2px 2px 0px;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            margin: 50px 25px 25px 25px;
+            align-content: center;
+        }
+        .labelFirst{
+            margin: 100px 25px 0px 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #firstInput{
+            margin: 0px 25px 0px 25px;
+            height: 29px;
+            border-color: #eaf1eac0;
+            border: 0px;
+            align-items: flex-start;
+            text-align: left;
+            border-radius: 2px;
+            align-content: left;
+        }
+        .labelSecond{
+            margin: -24px 25px 0px 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .Subject{
+            margin:0px 25px 0px 25px;
+            height: 200px;
+            border-color: #eaf1eac0;
+            border: 0px;
+            border-radius: 2px;
+            align-content: left;
+        }
+        .button{
+            margin:0px 0px 0px 40px; 
+            padding: 5px;
+            background-color: rgba(58, 206, 58, 0.986);
+            border: 0px;
+            color: white;
+        }
 
-.fname{
-    height: 200px;
-   
-}
-.button{
-    padding: 25px 10px 5px 0px;
-    margin-left: 25px;   
-}
-#submit{
-    background-color:   rgba(25, 199, 25, 0.644);
-    border: 0px;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-.sname{
-    padding: 0px;
-    height: 200px;
-}
+        h1{
+            text-align: center;
+        }
+       
+
     </style>
 </head>
 <body>
     <div class="container">
         <form>
-           <div class="inputs">
-            <label id="fname">First name</label><br><br>
-            <input type="text" id="fname" name="fname" placeholder="Your name">
-           </div>
-           <div class="inputs">
-            <label id="fname">Last name</label><br><br>
-            <input type="text" id="fname" name="fname" placeholder="Your last name">
-           </div>
-           <div class="inputs">
-            <label id="fname"> Country</label><br><br>
-            <input type="text" id="fname" name="fname" placeholder="Australia">
-           </div>
-           <div class="inputs">
-            <label id="fname">Subject</label><br><br>
-            <input type="text" id="fname" class="sname" placeholder="Write something">
-           </div>
-           <div class="button">
-            <button id="submit">Submit</button>
-           </div>            
-          </form>
-    </div>   
+            <div class="input">
+                <label class="labelFirst">First name</label><br><br>
+                <input type="text" id="firstInput" placeholder="Your name">
+            </div>
+            <div class="input">
+                <label class="labelSecond">Last name</label><br><br>
+                <input type="text" id="firstInput" placeholder="Last name">
+            </div>
+            <div class="input">
+                <label class="labelSecond">Country</label><br><br>
+                <input type="text" id="firstInput"placeholder="Australia">
+            </div>
+            <div class="input">
+                <label class="labelSecond">Subject </label><br><br>
+                <textarea class="Subject" >Write something</textarea>
+            </div>
+            <div class="input_button">
+                <button class="button">Submit</button>
+            </div>   
+        </form>
+    </div>
+    
 </body>
 </html>
